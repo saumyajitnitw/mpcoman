@@ -1,0 +1,123 @@
+  
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="css/offcanvas.css">
+
+<style type="text/css">
+.central{
+
+	margin-bottom: 250px;
+}
+
+</style>
+<body onload="hidebtns()" background="back.jpg">
+<div style="height:250px"onmouseover="hidebtns()"></div>
+<div class="central" >
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">	
+		<button class="my-button-sm appear hvr-back-pulse" id="one"><span class="glyphicon glyphicon-home"></span><br> Home</button>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" >	
+	</div>	
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">	
+		<button class="my-button-sm appear hvr-back-pulse" id="two" ><span class="glyphicon glyphicon-user"></span> About</button>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">	
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">	
+		<button class="my-button-sm appear hvr-back-pulse" id="three"><span class="glyphicon glyphicon-briefcase"></span><center>Products</center></button>
+	</div>
+
+	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" onmouseover="showbtns()" onmouseout="preserve()">	
+		<a href="home.html" style="text-decoration:none"><button class="my-button hvr-back-pulse btn-lg" id="central">MPC Oman</button></a>
+	</div>
+	
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" >	
+		<button class="my-button-sm appear hvr-back-pulse" id="four"><span class="glyphicon glyphicon-thumbs-up"></span> Partners</button>
+
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" >	
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" >	
+		<button class="my-button-sm appear hvr-back-pulse" id="five"><span class="glyphicon glyphicon-shopping-cart"></span> Services</button>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">	
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">	
+		<button class="my-button-sm appear hvr-back-pulse" id="six"><span class="glyphicon glyphicon-earphone"></span>Contact</button>
+	</div>
+
+
+</div>
+</div>
+<div style="height:250px"onmouseover="hidebtns()"></div>
+<script type="text/javascript">
+	function showbtns()
+	{
+		var btn1=document.getElementById('one');
+		btn1.style.visibility="visible";
+		btn1=document.getElementById('two');
+		btn1.style.visibility="visible";
+	    btn1=document.getElementById('three');
+		btn1.style.visibility="visible";
+		btn1=document.getElementById('four');
+		btn1.style.visibility="visible";
+	    btn1=document.getElementById('five');
+		btn1.style.visibility="visible";
+		btn1=document.getElementById('six');
+		btn1.style.visibility="visible";
+		
+	}
+	function hidebtns()
+	{
+		var btn1=document.getElementById('one');
+		btn1.style.visibility="hidden";
+		btn1=document.getElementById('two');
+		btn1.style.visibility="hidden";
+	    btn1=document.getElementById('three');
+		btn1.style.visibility="hidden";
+		btn1=document.getElementById('four');
+		btn1.style.visibility="hidden";
+	    btn1=document.getElementById('five');
+		btn1.style.visibility="hidden";
+		btn1=document.getElementById('six');
+		btn1.style.visibility="hidden";
+
+	}
+	function preserve()
+	{
+		var btn1=document.getElementById('one');
+		if(btn1.style.visibility==="visible")
+			btn1.style.visibility="visible";
+		else
+			btn1.style.visibility="hidden";
+		btn1=document.getElementById('two');
+		if(btn1.style.visibility==="visible")
+			btn1.style.visibility="visible";
+		else
+			btn1.style.visibility="hidden";
+	    btn1=document.getElementById('three');
+		if(btn1.style.visibility==="visible")
+			btn1.style.visibility="visible";
+		else
+			btn1.style.visibility="hidden";
+		btn1=document.getElementById('four');
+		if(btn1.style.visibility==="visible")
+			btn1.style.visibility="visible";
+		else
+			btn1.style.visibility="hidden";
+	    btn1=document.getElementById('five');
+		if(btn1.style.visibility==="visible")
+			btn1.style.visibility="visible";
+		else
+			btn1.style.visibility="hidden";
+		btn1=document.getElementById('six');
+		if(btn1.style.visibility==="visible")
+			btn1.style.visibility="visible";
+		else
+			btn1.style.visibility="hidden";
+		btn1=document.getElementById('central');
+		
+	}
+
+</script>
+
