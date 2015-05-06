@@ -5,6 +5,11 @@
 <script src="js/offcanvas.js"></script>
 
   <style>
+  .text
+  {
+    font-size: 18px;
+  }
+
 </style>
 <!-- css ends here -->
 
@@ -16,7 +21,7 @@
 <title>
   MPCOMAN
 </title>
-   <script src="js/bootstrap.min.js"></script>
+   
 
 </head>
 
@@ -31,10 +36,10 @@
       <div id='cssmenu'>
         <ul>
 
-         <li class='active'><a href='home.html'>Home</a></li>
+         <li ><a href='index.html'>Home</a></li>
          <li><a href='aboutus.html'>About Us</a></li>
           <!-- products start here-->
-          <li class='has-sub'><a href='#'>Products</a>
+          <li class='has-sub active'><a href='#'>Products</a>
             <ul>
              
               <li><a href='labmeasurement.html'>Laboratory Measurements</a>
@@ -73,13 +78,19 @@
 
 <article class="page" style="background-image: url('articlebg.jpg')">
   <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" style="background: white; height: 365px; margin-left: 30px">
-    <p>
+    <p class="text">
       <!--put text here-->
-      <br>
-      Muscat Petroleum Consultancy <span class="mpc"> (MPC)</span> is a specialized consultancy firm, founded by ...... It focuses it&rsquo;s services on Asset &amp; Pipeline Integrity consultancy. The founders of the Company possess more than .... years of collective experience in pipeline and asset integrity in the oil and gas sector.<br />
-      <br />
-      Demand of a such wealth of knowledge is significantly increasing in oil and gas industry, particularly in middle east, as the economical life of assets approaches their ends. The founders aimed to make this knowledge available to industry by establishing <span class="mpc"> (MPC)</span> consultancy services. <br/>
-      <br />
+      <br/>
+      <span class="mpc text"> MPC</span> specializes in the following laboratory procedures :
+      <ul style="margin:10px">
+        <li><a class="text"href="http://wiki.aapg.org/Overview_of_routine_core_analysis" target="_blank">Routine Core Analysis</a><span class="mpc text">(RCAL)</span></li>
+        <li><a class="text"href="http://en.wikipedia.org/wiki/Special_core_analysis" target="_blank">Special Core Analysis</a> <span class="mpc text">(SCAL)</span></li>
+        <li ><a class="text" style="text-decoration: none;">Formation Damage</a></li>
+        <li><a class="text"href="http://www.atsdr.cdc.gov/toxprofiles/tp123-c3.pdf" target="_blank">Hydrocarbon Analysis<a></li>
+        <li><a class="text" href="http://en.wikipedia.org/wiki/Enhanced_oil_recovery" target="_blank">Enhanced Oil Recovery </a><span class="mpc text">(EOR)</span></li>
+        <li ><a class="text" style="text-decoration: none;">Other related products</a></li>
+      </ul>
+
     </p>
 
   </div>
@@ -110,5 +121,5 @@
   </div>
 </div>
 </div>
-
+<script src="js/bootstrap.min.js"></script>
 </body>

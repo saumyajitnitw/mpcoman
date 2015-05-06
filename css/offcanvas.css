@@ -169,3 +169,198 @@
 0% {opacity: 0;}
 100%{opacity: 1;}
 }
+
+
+@charset "UTF-8";
+
+
+  #cssmenu {padding: 0; margin: 0px; border: 0; width: auto; height: auto}
+  #cssmenu ul, #cssmenu li {list-style: none; margin: 0; padding: 0;}
+  #cssmenu ul {position: relative; z-index: 597; }
+  #cssmenu ul li { float: left; min-height: 1px; vertical-align: middle;}
+  #cssmenu ul li.hover,
+  #cssmenu ul li:hover {position: relative; z-index: 599; cursor: default;}
+  #cssmenu ul ul {visibility: hidden; position: absolute; top: 100%; left: 100%; z-index: 598; }
+  #cssmenu ul ul li {float: none;}
+  #cssmenu ul ul ul {top: 0; left: auto; right: -99.5%; }
+  #cssmenu ul li:hover > ul { visibility: visible;}
+  #cssmenu ul ul {bottom: 0; left: 0;}
+  #cssmenu ul ul {margin-top: 0; }
+  #cssmenu ul ul li {font-weight: normal;}
+  #cssmenu a { display: block; line-height: 1em; text-decoration: none; }
+  #cssmenu p { display: block; line-height: 1em; text-decoration: none; }
+
+
+  /*gives background look*/
+  #cssmenu {
+    background: #333;
+    border-bottom: 4px solid #1b9bff;
+    font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+    font-size: 12px; 
+  }
+
+  #cssmenu > ul { *display: inline-block; }
+
+  #cssmenu:after, #cssmenu ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+  }
+
+
+  #cssmenu a {
+    background: #333;
+    color: #CBCBCB;
+    padding: 0 20px; 
+  }
+  #cssmenu ul { text-transform: uppercase; }
+
+  #cssmenu ul ul {
+    border-top: 4px solid #1b9bff;
+    text-transform: none;
+    min-width: 190px; 
+  }
+  #cssmenu ul ul a {
+    background: #1b9bff;
+    color: #FFF;
+    border: 1px solid #0082e7;
+    border-top: 0 none;
+    line-height: 150%;
+    padding: 16px 20px; 
+  }
+  #cssmenu ul ul ul { border-top: 0 none; }
+
+  #cssmenu ul ul li { position: relative }
+
+
+
+  #cssmenu > ul > li > a { line-height: 48px;  }
+
+  /*enlarge the menu*/
+  #cssmenu ul ul li:first-child > a { border-top: 1px solid #0082e7; }
+  #cssmenu ul ul li:hover > a { background: #35a6ff; }
+
+  #cssmenu ul ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 0 #1b9bff; 
+  }
+  #cssmenu ul ul li:last-child:hover > a { border-radius: 0 0 0 3px; }
+
+  #cssmenu ul ul li.has-sub > a:after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -8px;
+  }
+
+
+  #cssmenu ul li:hover > a, #cssmenu ul li.active > a {
+    background: #1b9bff;
+    color: #FFF;
+  }
+  #cssmenu ul li.has-sub > a:after {
+    content: '+';
+    margin-left: 5px; 
+  }
+  #cssmenu ul li.last ul {
+    left: auto;
+    right: 0; 
+  }
+  #cssmenu ul li.last ul ul {
+    left: auto;
+    right: 99.5%;
+  }
+
+  
+ * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .fit { /* set relative picture size */
+    width: 100%;
+    height: 25%;
+  }
+
+  .center {
+    display: block;
+    margin: auto;
+  }
+
+  .centralrow
+  {
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 0 100px #888888;
+
+  }
+
+
+.page {
+  clear: both;
+  padding-top: 40px;
+  overflow: hidden;
+  font-family: arial;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  font-size: 14px;
+  height: 450px;
+}
+
+.left_side_home {
+  background-color: #fff;
+  width: 500px;
+  margin-left: 20px;
+  float: left;
+  padding: 10px 20px 10px 20px;
+  text-align: justify;
+  min-height: 385px;
+  color: #792a17;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.right_side_home {
+  float: left;
+  width: 276px;
+  margin-left: 20px;
+}
+.news{
+  float: right;
+  margin-left: 10px;
+  width: 300px;
+  margin-right: 20px;
+}
+.footer {
+  background-color: #333;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+   font-size: 12px; 
+   box-shadow: 0 0 100px #888888;
+   height:80px;
+}
+.mpc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #AA9342;
+  text-decoration: none;
+  
+
+}
+
+.raw {
+  float: left;
+  width: 100%;
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+.form {
+  float: left;
+  width: auto;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 0px;
+  color: #333;
+}
